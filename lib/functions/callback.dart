@@ -9,9 +9,6 @@ void main(){
 }
 
 void onPressed(List<void Function()> callbacks){
-  // for(int i = 0; i < callbacks.length; i++){
-  //   callbacks[i]();
-  // }
   for(void Function() callback in callbacks){
     callback.call();
   }
